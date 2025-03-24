@@ -1,6 +1,8 @@
 name: first app
 
-on: push
+on:
+  repository_dispatch:
+    types: [trigger_second_pipeline]
 
 jobs:
   first_app:
@@ -19,5 +21,6 @@ jobs:
       - name: running the app
         run: |
            echo "app is runing"
-
+      
+      
       
