@@ -1,4 +1,4 @@
-name: first app
+name: second app
 
 on:
   repository_dispatch:
